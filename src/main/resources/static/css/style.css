@@ -1,0 +1,19 @@
+.time{
+	color: blue;
+	text-align: center;
+	font-size: 4vw;
+}
+.date{
+	color: blue;
+	text-align: center;
+	font-size: 4vw;
+}
+.count{
+	color: red;
+	text-align: center;
+	font-size: 4vw;
+}
+.link{
+	color: silver;
+	font-size: 3vw;
+}

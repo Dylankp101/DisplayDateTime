@@ -8,10 +8,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
 
-<p><fmt:formatDate type = "date" value = "${date}" /></p>
+<p class="date"><fmt:formatDate type = "date" value = "${date}" /></p>
 
 
 </body>

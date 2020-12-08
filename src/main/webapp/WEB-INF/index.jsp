@@ -8,9 +8,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 	<body>
-		<a href="/time">Time</a>
-		<a href="/date">Date</a>
+	<h1><a class="link" href="/time">Time</a></h1>
+		<h1><a class="link" href="/date">Date</a></h1>
+		<h1 class="count"><c:out value="${count}"></c:out></h1>
 	</body>
 </html>

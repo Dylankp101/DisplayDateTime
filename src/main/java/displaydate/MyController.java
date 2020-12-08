@@ -3,6 +3,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Date;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
@@ -10,8 +12,13 @@ import org.springframework.ui.Model;
 @Controller
 public class MyController {
 	@RequestMapping("/")
-	public String home(Model model) {
-
+	public String home(HttpSession session) {
+		if(session.getAttribute("count") == null) {
+			session.setAttribute("count", 0);
+		}else {
+		Integer total = (Integer)session.getAttribute("count");	
+		session.setAttribute("count", total + 1);
+		}	
 		return "index.jsp";
 	}
 	@RequestMapping("/time")
